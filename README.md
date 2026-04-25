@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="public/meera.JPG" alt="Meera S" width="150" style="border-radius: 50%;"/>
   <h1>Meera S - Personal Portfolio</h1>
   <p><strong>A modern, responsive, glassmorphism-inspired personal portfolio showcasing my journey as a Full Stack Developer.</strong></p>
   
@@ -17,7 +16,7 @@
 Here's a quick walkthrough of the application:
 
 <div align="center">
-  <img src="public/portfolio_demo.webp" alt="Portfolio Demo Recording" width="800"/>
+  <img src="public/portfolio_demo.webp?v=2" alt="Portfolio Demo Recording" width="800"/>
 </div>
 
 ## 🛠️ Built With
