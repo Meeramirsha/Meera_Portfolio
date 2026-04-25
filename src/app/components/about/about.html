@@ -1,0 +1,72 @@
+<section class="about section" id="about">
+    <div class="container">
+        <div class="about-left reveal-left">
+            <div class="about-image-wrap">
+                <div class="about-initials-card">
+                    <span>Meera S</span>
+                    <p>Full Stack Developer</p>
+                </div>
+                <!-- Info cards -->
+                <div class="info-card card-exp">
+                    <div class="info-num">3+</div>
+                    <div class="info-label">Internships</div>
+                </div>
+                <div class="info-card card-proj">
+                    <div class="info-num">4+</div>
+                    <div class="info-label">Projects</div>
+                </div>
+                <div class="info-card card-cert">
+                    <div class="info-num">5+</div>
+                    <div class="info-label">Certifications</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-right">
+            <div class="section-label reveal">About Me</div>
+            <h2 class="section-title text-left reveal">Turning Ideas Into <span class="gradient-text">Reality</span>
+            </h2>
+
+            <p class="about-text reveal">
+                B.E. Computer Science graduate with strong full-stack skills in Java, Spring Boot, REST APIs, AngularJS, HTML,
+                CSS, and MySQL. Experienced in building responsive web applications with clean architecture and efficient API integration.
+            </p>
+            <p class="about-text reveal">
+                Skilled in modern development practices using Git, Postman, and AI-assisted tools to enhance coding efficiency. Passionate
+                about problem-solving, continuous learning, and building scalable solutions as an entry-level Software Developer.
+            </p>
+
+            <!-- Strengths grid -->
+            <div class="strengths-grid">
+                @for (s of strengths; track s.title; let i = $index) {
+                <div class="strength-card glass-card reveal" [style.animation-delay]="i * 0.1 + 's'">
+                    <div class="strength-icon">
+                        <i [class]="s.icon"></i>
+                    </div>
+                    <div>
+                        <h4 class="strength-title">{{ s.title }}</h4>
+                        <p class="strength-desc">{{ s.desc }}</p>
+                    </div>
+                </div>
+                }
+            </div>
+
+            <!-- Contact info row -->
+            <div class="contact-info reveal">
+                <a href="mailto:meerasankar00@gmail.com" class="contact-chip">
+                    <i class="fas fa-envelope"></i> meerasankar00&#64;gmail.com
+                </a>
+                <a href="tel:+919025078335" class="contact-chip">
+                    <i class="fas fa-phone"></i> +91 9025078335
+                </a>
+            </div>
+
+            <!-- Languages -->
+            <div class="languages-row reveal" style="margin-top: 2rem;">
+                <span style="font-weight: 600; color: var(--text-primary); margin-right: 1rem;">Languages:</span>
+                <span class="contact-chip" style="background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2);"><i class="fas fa-language"></i> English (Fluent)</span>
+                <span class="contact-chip" style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.2);"><i class="fas fa-language"></i> Tamil (Native)</span>
+            </div>
+        </div>
+    </div>
+</section>

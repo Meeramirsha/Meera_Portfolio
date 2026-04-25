@@ -1,0 +1,75 @@
+<section class="hero section" id="home">
+    <div class="container">
+        <div class="hero-content">
+            <!-- Badge -->
+            <div class="hero-badge reveal">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Mangadu, Chennai, Tamil Nadu, India</span>
+            </div>
+
+            <!-- Main heading -->
+            <h1 class="hero-title reveal">
+                Hi, I'm <span class="gradient-text">Meera S</span>
+            </h1>
+
+            <!-- Typing animation subtitle -->
+            <div class="hero-subtitle reveal">
+                <span class="typing-text">{{ typedText }}</span><span class="cursor">|</span>
+            </div>
+
+            <!-- Description -->
+            <p class="hero-description reveal">
+                B.E. Computer Science graduate with strong full-stack skills in Java, Spring Boot, REST APIs, AngularJS,
+                HTML,
+                CSS, and MySQL. Passionate about building scalable and efficient web applications.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-cta reveal">
+                <button class="btn btn-primary" (click)="scrollToSection('projects')">
+                    <i class="fas fa-rocket"></i>
+                    View Projects
+                </button>
+                <a class="btn btn-outline" href="Meera_S_Resume_Final.pdf" target="_blank">
+                    <i class="fas fa-eye"></i>
+                    View Resume
+                </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="hero-socials reveal">
+                <a href="https://github.com/Meeramirsha" target="_blank" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/meera-s-1b2350250" target="_blank" class="social-link"
+                    title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:meerasankar00@gmail.com" class="social-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+919025078335" class="social-link" title="Phone">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Hero visual / avatar side -->
+        <div class="hero-visual reveal-right">
+            <div class="avatar-container">
+                <div class="avatar-ring"></div>
+                <div class="avatar-inner">
+                    <!-- AFTER (your actual photo) -->
+                    <img src="meera.JPG" alt="Meera S" class="avatar-photo" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-down" (click)="scrollToSection('about')">
+        <span>Scroll Down</span>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>

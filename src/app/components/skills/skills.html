@@ -1,0 +1,41 @@
+<section class="skills section" id="skills">
+    <div class="container">
+        <p class="section-label reveal">What I Work With</p>
+        <h2 class="section-title reveal">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle reveal">Technologies and tools I use to build exceptional software.</p>
+
+        <div class="skills-grid">
+            @for (cat of skillCategories; track cat.category; let i = $index) {
+            <div class="skill-category glass-card reveal" [style.animation-delay]="i * 0.1 + 's'">
+                <!-- Category header -->
+                <div class="cat-header">
+                    <div class="cat-icon">
+                        <i [class]="cat.icon"></i>
+                    </div>
+                    <h3 class="cat-title">{{ cat.category }}</h3>
+                </div>
+
+                <!-- Skill items -->
+                <div class="skill-items">
+                    @for (skill of cat.skills; track skill.name) {
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name-wrap">
+                                <i [class]="skill.icon" [style.color]="skill.color"></i>
+                                <span class="skill-name">{{ skill.name }}</span>
+                            </div>
+                            <span class="skill-pct">{{ skill.level }}%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" [style.width.%]="skill.level"
+                                [style.background]="'linear-gradient(90deg,' + skill.color + ', ' + skill.color + '99)'">
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>

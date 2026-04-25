@@ -1,0 +1,33 @@
+<section class="projects section" id="projects">
+    <div class="container">
+        <p class="section-label reveal">Browse My Recent</p>
+        <h2 class="section-title reveal">Projects</h2>
+        
+        <div class="projects-grid">
+            @for (project of projects; track project.title; let i = $index) {
+            <div class="project-item reveal" [style.animation-delay]="i * 0.1 + 's'">
+                <div class="project-card-v2">
+                    <div class="project-image-box">
+                        <img [src]="project.imageUrl" [alt]="project.title" class="project-img-v2">
+                    </div>
+                    <h3 class="project-name-v2">{{ project.title }}</h3>
+                    
+                    <!-- Reduced contents as requested -->
+                    <div class="project-tags-v2">
+                        @for (tag of project.tags.slice(0, 3); track tag) {
+                            <span class="tag-v2">{{ tag }}</span>
+                        }
+                    </div>
+
+                    <div class="project-actions-v2">
+                        <a [href]="project.githubUrl" target="_blank" class="btn-v2">Github</a>
+                        @if (project.demoUrl !== '#') {
+                        <a [href]="project.demoUrl" target="_blank" class="btn-v2">Live Demo</a>
+                        }
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,30 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+    <div class="nav-container">
+        <!-- Logo -->
+        <div class="nav-logo" (click)="scrollTo('home')">
+            <span class="logo-text">Meera<span class="gradient-text">S</span></span>
+            <span class="logo-dot"></span>
+        </div>
+
+        <!-- Desktop Nav Links -->
+        <ul class="nav-links" [class.open]="isMenuOpen">
+            @for (link of navLinks; track link.id) {
+            <li>
+                <a class="nav-link" [class.active]="activeSection === link.id" (click)="scrollTo(link.id)">
+                    {{link.label}}
+                </a>
+            </li>
+            }
+
+        </ul>
+
+        <button class="hamburger" (click)="toggleMenu()" [class.active]="isMenuOpen" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Overlay for mobile -->
+<div class="nav-overlay" [class.active]="isMenuOpen" (click)="closeMenu()"></div>

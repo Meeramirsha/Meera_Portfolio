@@ -1,0 +1,33 @@
+<section class="education section" id="education">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2 class="section-title">Education <span class="gradient-text">Background</span></h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="education-container">
+            @for (edu of educationList; track edu.school) {
+            <div class="edu-item reveal">
+                <div class="edu-icon">
+                    <i [class]="edu.icon"></i>
+                </div>
+                <div class="edu-content">
+                    <div class="edu-header">
+                        <h3 class="edu-school">{{ edu.school }}</h3>
+                        <span class="edu-period">{{ edu.period }}</span>
+                    </div>
+                    <div class="edu-subhead">
+                        <span class="edu-degree">{{ edu.degree }}</span>
+                        <span class="edu-score" *ngIf="edu.score">{{ edu.score }}</span>
+                    </div>
+                    <ul class="edu-highlights">
+                        @for (highlight of edu.highlights; track highlight) {
+                        <li>{{ highlight }}</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>

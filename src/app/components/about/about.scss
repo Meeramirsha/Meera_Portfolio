@@ -1,0 +1,226 @@
+.about {
+    background: var(--bg-secondary);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    align-items: start;
+}
+
+/* LEFT SIDE */
+
+
+.about-image-wrap {
+    position: relative;
+    width: 300px;
+    height: 340px;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+
+.about-initials-card {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-lg);
+    background: var(--accent-gradient);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    span {
+        font-size: 2rem;
+        font-weight: 800;
+        color: white;
+        letter-spacing: -1px;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+}
+
+.info-card {
+    position: absolute;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: var(--glass-blur);
+    border-radius: var(--radius-md);
+    padding: 14px 18px;
+    text-align: center;
+    animation: float 4s ease-in-out infinite;
+
+    .info-num {
+        font-size: 1.5rem;
+        font-weight: 800;
+        background: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .info-label {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        font-weight: 500;
+    }
+}
+
+.card-exp {
+    top: -20px;
+    right: -30px;
+    animation-delay: 0s;
+}
+
+.card-proj {
+    bottom: 60px;
+    right: -40px;
+    animation-delay: 1.5s;
+}
+
+.card-cert {
+    bottom: -20px;
+    left: -30px;
+    animation-delay: 3s;
+}
+
+/* RIGHT SIDE */
+
+
+.section-label {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent-primary);
+    margin-bottom: 12px;
+}
+
+.section-title.text-left {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 16px;
+    font-size: 1rem;
+
+    strong {
+        color: var(--text-primary);
+        font-weight: 600;
+    }
+}
+
+.strengths-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 32px 0;
+}
+
+.strength-card {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.strength-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--accent-gradient-soft);
+    border: 1px solid var(--border-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    i {
+        font-size: 1rem;
+        background: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
+
+.strength-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--text-primary);
+}
+
+.strength-desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.contact-info {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.contact-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 50px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    transition: all var(--transition-fast);
+
+    &:hover {
+        background: var(--accent-gradient-soft);
+        border-color: var(--border-accent);
+        color: var(--text-primary);
+    }
+
+    i {
+        color: var(--accent-primary);
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .section-title.text-left {
+        text-align: center;
+    }
+
+    .about-image-wrap {
+        margin-bottom: 20px;
+    }
+
+    .strengths-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-card {
+        display: none;
+    }
+}

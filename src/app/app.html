@@ -1,0 +1,28 @@
+<div class="page-loader" [class.hidden]="!isLoading">
+  <div class="loader-content">
+    <div class="loader-ring"></div>
+    <p class="loader-text gradient-text">Loading...</p>
+  </div>
+</div>
+
+<div class="scroll-progress" [style.width.%]="scrollProgress"></div>
+
+<app-navbar></app-navbar>
+
+<main>
+  <app-hero id="home"></app-hero>
+  <app-about id="about"></app-about>
+  <app-education id="education"></app-education>
+  <app-skills id="skills"></app-skills>
+  <app-projects id="projects"></app-projects>
+  <app-experience id="experience"></app-experience>
+  <app-certifications id="certifications"></app-certifications>
+  <app-contact id="contact"></app-contact>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>Designed & Built with ❤️ by <span class="gradient-text">Meera S</span></p>
+    <p class="footer-sub">© 2025 All Rights Reserved</p>
+  </div>
+</footer>

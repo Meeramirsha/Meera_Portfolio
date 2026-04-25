@@ -1,0 +1,139 @@
+.projects {
+    background: var(--bg-primary);
+}
+
+.section-label {
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 60px;
+    background: none;
+    -webkit-text-fill-color: initial;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.project-item {
+    display: flex;
+    justify-content: center;
+}
+
+.project-card-v2 {
+    background: var(--bg-card);
+    border: 2px solid var(--border-color);
+    border-radius: 40px;
+    padding: 30px;
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all var(--transition-base);
+
+    &:hover {
+        border-color: var(--accent-primary);
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-md);
+    }
+}
+
+.project-image-box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 30px;
+    overflow: hidden;
+    background: #f5f5f5;
+    margin-bottom: 25px;
+    border: 1px solid var(--border-color);
+}
+
+.project-img-v2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card-v2:hover .project-img-v2 {
+    transform: scale(1.1);
+}
+
+.project-name-v2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.project-tags-v2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.tag-v2 {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    background: var(--bg-secondary);
+    color: var(--accent-primary);
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.project-actions-v2 {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.btn-v2 {
+    flex: 1;
+    padding: 12px 0;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1.5px solid var(--text-primary);
+    color: var(--text-primary);
+    background: transparent;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: var(--text-primary);
+        color: #fff;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+    
+    .project-card-v2 {
+        padding: 20px;
+    }
+    
+    .project-name-v2 {
+        font-size: 1.2rem;
+    }
+}

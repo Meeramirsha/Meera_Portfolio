@@ -1,0 +1,44 @@
+<section class="experience section" id="experience">
+    <div class="container">
+        <p class="section-label reveal">My Journey</p>
+        <h2 class="section-title reveal">Work <span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle reveal">Internship experiences that shaped my professional skills.</p>
+
+        <div class="timeline">
+            <div class="timeline-item reveal" *ngFor="let exp of experiences; let i = index; let last = last"
+                [style.animation-delay]="i * 0.15 + 's'">
+                <!-- Timeline line -->
+                <div class="timeline-connector" *ngIf="!last"></div>
+
+                <!-- Dot -->
+                <div class="timeline-dot" [style.background]="exp.color"
+                    [style.boxShadow]="'0 0 20px ' + exp.color + '60'">
+                    <i [class]="exp.icon"></i>
+                </div>
+
+                <!-- Content card -->
+                <div class="timeline-card glass-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3 class="exp-company">{{ exp.company }}</h3>
+                            <p class="exp-role">{{ exp.role }}</p>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="exp-period"><i class="fas fa-calendar-alt"></i> {{ exp.period }}</span>
+                            <span class="exp-type">
+                                <i class="fas fa-wifi"></i> {{ exp.type }}
+                            </span>
+                        </div>
+                    </div>
+
+                    <ul class="exp-highlights">
+                        <li *ngFor="let h of exp.highlights">
+                            <i class="fas fa-arrow-right" [style.color]="exp.color"></i>
+                            {{ h }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
