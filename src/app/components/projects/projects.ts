@@ -44,8 +44,8 @@ export class ProjectsComponent {
       tags: ['Angular', 'SCSS', 'TypeScript', 'Responsive Design'],
       icon: 'fas fa-laptop-code',
       color: '#ec4899',
-      githubUrl: 'https://github.com/Meeramirsha/Portfolio_Meera',
-      demoUrl: '#',
+      githubUrl: 'https://github.com/Meeramirsha/Meera_Portfolio',
+      demoUrl: 'https://meera-portfolio-xi.vercel.app/',
       imageUrl: '/portfolio_app.png?v=1',
       highlights: [
         'Built with modern Angular standalone components',
