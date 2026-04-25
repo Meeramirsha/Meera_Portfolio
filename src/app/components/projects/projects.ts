@@ -29,7 +29,7 @@ export class ProjectsComponent {
       icon: 'fas fa-robot',
       color: '#f59e0b',
       githubUrl: 'https://github.com/Meeramirsha/Car_Buy_Sell',
-      demoUrl: '#',
+      demoUrl: 'https://car-buy-sell-kappa.vercel.app/#/',
       imageUrl: '/car_app.png?v=1',
       highlights: [
         'Integrated Python ML model for car price prediction',
