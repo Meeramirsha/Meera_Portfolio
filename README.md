@@ -1,59 +1,70 @@
-# MeeraPortfolio
+<div align="center">
+  <img src="public/meera.JPG" alt="Meera S" width="150" style="border-radius: 50%;"/>
+  <h1>Meera S - Personal Portfolio</h1>
+  <p><strong>A modern, responsive, glassmorphism-inspired personal portfolio showcasing my journey as a Full Stack Developer.</strong></p>
+  
+  [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg?style=for-the-badge)](https://meera-portfolio-xi.vercel.app/)
+  [![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.dev/)
+  [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
+</div>
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.11.
+<br/>
 
-## Development server
+## 🔗 Live Link
+**Check out the live portfolio here:** [https://meera-portfolio-xi.vercel.app/](https://meera-portfolio-xi.vercel.app/)
 
-To start a local development server, run:
+## 🎥 Portfolio Demo Video
+Here's a quick walkthrough of the application:
 
-```bash
-ng serve
-```
+<div align="center">
+  <img src="public/portfolio_demo.webp" alt="Portfolio Demo Recording" width="800"/>
+</div>
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🛠️ Built With
 
-## Code scaffolding
+- **Framework:** Angular 18 (Standalone Components)
+- **Styling:** SCSS, CSS Custom Properties, Glassmorphism
+- **Icons:** FontAwesome
+- **Deployment:** Vercel
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## ✨ Key Features
 
-```bash
-ng generate component component-name
-```
+- **🎨 Modern Design:** Sleek glassmorphism UI cards with dynamic gradients.
+- **📱 Fully Responsive:** Carefully crafted mobile-first approach ensuring perfect display on all devices.
+- **✨ Interactive Animations:** Smooth scroll reveals, hover effects, and typing animations for an engaging user experience.
+- **🗂️ Dynamic Sections:** 
+  - **About:** Personal summary and strengths.
+  - **Education:** Academic background.
+  - **Skills:** Categorized technical proficiencies with progress bars.
+  - **Projects:** Direct links to GitHub repositories and live demos.
+  - **Experience:** Professional journey.
+  - **Certificates:** Recognitions with original brand colors.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🚀 Running Locally
 
-```bash
-ng generate --help
-```
+To run this project on your local machine:
 
-## Building
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Meeramirsha/Meera_Portfolio.git
+   cd Meera_Portfolio
+   ```
 
-To build the project run:
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-```bash
-ng build
-```
+3. **Start the development server:**
+   ```bash
+   npm start
+   # or
+   ng serve
+   ```
+   Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 📫 Contact Me
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Email:** meerasankar00@gmail.com
+- **LinkedIn:** [Meera S](https://www.linkedin.com/in/meera-s-1b2350250)
+- **GitHub:** [@Meeramirsha](https://github.com/Meeramirsha)
