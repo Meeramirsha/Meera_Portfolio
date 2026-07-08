@@ -23,6 +23,22 @@ interface Project {
 export class ProjectsComponent {
   projects: Project[] = [
     {
+      title: 'Smart Finance Tracker',
+      description: 'An advanced full-stack financial management platform designed to track income, expenses, set monthly category budgets, visualize spending patterns, and provide AI-generated financial insights.',
+      tags: ['Spring Boot', 'Angular', 'PostgreSQL', 'Gemini AI'],
+      icon: 'fas fa-wallet',
+      color: '#0d9488',
+      githubUrl: 'https://github.com/Meeramirsha/smart-finance-tracker',
+      demoUrl: 'https://meeramirsha.github.io/smart-finance-tracker/',
+      imageUrl: '/finance_app.png?v=1',
+      highlights: [
+        'Secure JWT Authentication: User sign-up, sign-in, and token-based state management',
+        'Dashboard Overview: Dynamic summary cards for income, expenses, and budget status with trend charts',
+        'Monthly Budget Planning: Custom spending caps for individual categories with auto budget exhaustion alerts',
+        'AI Financial Insights: Generates customized recommendations, flags leaks, and issues saving challenges using Google Gemini'
+      ]
+    },
+    {
       title: 'AI-Powered Car Buy & Sell Platform',
       description: 'Developed a full-stack platform for buying and selling cars, integrated with a Python-based AI service for price prediction using machine learning, built on Spring Boot and AngularJS.',
       tags: ['Spring Boot', 'AngularJS', 'Python AI', 'MySQL'],
